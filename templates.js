@@ -13,6 +13,6 @@ document.getElementById('download-trigger').addEventListener('click', function()
         msg.style.display = 'none';
         
         // Executa o download real do ficheiro hospedado no seu GitHub
-        window.location.href = "templates/template1.zip";
+        window.location.href = "template1.zip";
     }, 2000);
 });
