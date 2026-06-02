@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Aulas | Hack Tech</title>
+    <meta name="description" content="Explore novos cursos de tecnologia ou continue seus estudos de onde parou no Hack Tech.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aulas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho (Mesmo padrão do Index) -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Hack<span>Tech</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="aulas.html" class="active">Aulas</a></li>
+                    <li><a href="#youtube">Vídeos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cabeçalho do Painel Dinâmico -->
+    <section class="dashboard-hero">
+        <div class="container">
+            <h1>Seu Centro de Aprendizado</h1>
+            <p>Escolha o seu próximo objetivo ou continue sua jornada rumo ao topo.</p>
+            
+            <!-- Controle Interativo de Abas -->
+            <div class="tab-control">
+                <button class="tab-btn active" data-tab="explorar">✨ 1. Explorar Cursos</button>
+                <button class="tab-btn" data-tab="estudar">🚀 2. Meus Estudos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container main-layout">
+        
+        <!-- Bloco Dinâmico de Conteúdo -->
+        <section class="content-area">
+
+            <!-- ================= TAB: EXPLORAR ================= -->
+            <div id="tab-explorar" class="tab-content active-content">
+                <div class="section-header-flex">
+                    <h2 class="section-title">Encontre seu Próximo Passo</h2>
+                    <div class="filter-badges">
+                        <span class="badge-filter active">Todos</span>
+                        <span class="badge-filter">Monetização</span>
+                        <span class="badge-filter">Código</span>
+                        <span class="badge-filter">SEO</span>
+                    </div>
+                </div>
+
+                <div class="grid-courses">
+                    <!-- Curso 1 -->
+                    <article class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1618401471353-b98aedd07871?w=500&q=80" alt="Curso de Monetização">
+                            <span class="course-badge">Acesso Livre</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Monetização Turbo: AdSense e Afiliados</h3>
+                            <p>O guia definitivo para transformar tráfego em receita recorrente ainda este ano.</p>
+                            <div class="course-footer">
+                                <span>⏱️ 12 Aulas</span>
+                                <button class="btn-action">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Curso 2 -->
+                    <article class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" alt="Curso de FrontEnd">
+                            <span class="course-badge premium">Premium</span>
+                        </div>
+                        <div class="course-info">
+                            <h3>Front-End Hacker: HTML, CSS e JS</h3>
+                            <p>Construa páginas rápidas, interativas e focadas na experiência do usuário.</p>
+                            <div class="course-footer">
+                                <span>⏱️ 24 Aulas</span>
+                                <button class="btn-action">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ================= TAB: ESTUDAR ================= -->
+            <div id="tab-estudar" class="tab-content">
+                <h2 class="section-title">Continue de Onde Parou</h2>
+                
+                <div class="study-area">
+                    <!-- Painel do Curso Atual -->
+                    <div class="current-course-box">
+                        <div class="video-container-wrapper">
+                            <!-- Simulação de Vídeo Interativo -->
+                            <div class="video-player-placeholder">
+                                <span class="play-icon-glow">▶</span>
+                                <p>Clique para iniciar a Aula 03: "Estruturando tags para SEO"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="current-course-details">
+                            <div class="progress-container">
+                                <div class="progress-text">
+                                    <h3>Curso: SEO Avançado para Blogs</h3>
+                                    <span>35% Concluído</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 35%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-list">
+                                <div class="lesson-item completed">
+                                    <span class="status-icon">✓</span>
+                                    <p>Aula 01: O que o algoritmo busca?</p>
+                                </div>
+                                <div class="lesson-item completed">
+                                    <span class="status-icon">✓</span>
+                                    <p>Aula 02: Otimizando velocidade de carregamento</p>
+                                </div>
+                                <div class="lesson-item active-lesson">
+                                    <span class="status-icon pulsate">▶</span>
+                                    <p>Aula 03: Estruturando tags para SEO (Atual)</p>
+                                </div>
+                                <div class="lesson-item">
+                                    <span class="status-icon">🔒</span>
+                                    <p>Aula 04: Configurando o Google Search Console</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Barra Lateral Otimizada para AdSense -->
+        <aside class="sidebar">
+            <div class="sidebar-widget conversion-widget">
+                <h3>💡 Dica do Dia</h3>
+                <p>Aplicar o conteúdo prático nas primeiras 24 horas aumenta sua retenção de aprendizado em até 75%!</p>
+            </div>
+
+            <!-- ANÚNCIO ADSENSE -->
+            <div class="ads-placeholder vertical-ad">
+                <span>Anúncio AdSense (Responsivo Lateral)</span>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Hack Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/aulas.js"></script>
+</body>
+</html>
